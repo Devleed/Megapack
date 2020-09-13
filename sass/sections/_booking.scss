@@ -1,0 +1,71 @@
+.booking {
+  padding: 15rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 202, 84, 0.815),
+      rgb(0, 202, 84)
+    ),
+    url(../media/apartment-architecture-large.jpg);
+
+  @include respond-max($largest) {
+    padding: 10rem 8rem;
+  }
+
+  @include respond-max($medium-small) {
+    padding: 6rem;
+  }
+
+  &__form {
+    padding: 3rem;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 45%;
+    border-radius: 5px;
+    text-align: center;
+
+    @include respond-max($medium) {
+      width: 55%;
+    }
+
+    @include respond-max($medium-small) {
+      width: 70%;
+    }
+
+    @include respond-max($phone) {
+      width: 100%;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &--input {
+      width: 100%;
+      padding: 2rem;
+      background-color: var(--color-grey-light);
+      border: none;
+      font-family: inherit;
+      font-size: 1.3rem;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus:valid {
+        border-bottom: 1px solid var(--color-primary);
+      }
+
+      &:focus:invalid {
+        border-bottom: 1px solid var(--color-secondary);
+      }
+    }
+
+    ::placeholder {
+      text-transform: capitalize;
+    }
+  }
+}

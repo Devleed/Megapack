@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navigation">
+      <h2 class="logo">megapack</h2>
+      <ul class="navigation__list">
+        <li class="navigation__item">services</li>
+        <li class="navigation__item">features</li>
+        <li class="navigation__item">contact</li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <div class="video-figure">
+        <video class="video-figure__content" autoplay muted loop>
+          <source src="media/bg-cover.mp4" type="video/mp4" />
+          browser does not support video
+        </video>
+      </div>
+
+      <div class="header__content">
+        <span class="header__content--rating">#1 design studio in europe</span>
+        <h3 class="header__content--slogan">
+          Looking for Premium Services?<br />
+          Discover PixFort Studio.
+        </h3>
+        <a href="#" class="btn btn-primary">order services today</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="features" id="features-section">
+        <span class="badge"> made by an elite author </span>
+        <h3 class="primary__heading">Get Access to PixFort Builder.</h3>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+          libero.
+        </p>
+        <div class="features__content">
+          <div class="feature" id="feature">
+            <svg class="feature__icon">
+              <use xlink:href="media/sprite.svg#icon-compass"></use>
+            </svg>
+            <h4 class="secondary__heading">pixel perfect</h4>
+            <p class="paragraph__small">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="feature" id="feature">
+            <svg class="feature__icon">
+              <use xlink:href="media/sprite.svg#icon-dropbox"></use>
+            </svg>
+            <h4 class="secondary__heading">product UX</h4>
+            <p class="paragraph__small">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="feature" id="feature">
+            <svg class="feature__icon">
+              <use xlink:href="media/sprite.svg#icon-laptop"></use>
+            </svg>
+            <h4 class="secondary__heading">web design</h4>
+            <p class="paragraph__small">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="feature" id="feature">
+            <svg class="feature__icon">
+              <use xlink:href="media/sprite.svg#icon-stopwatch"></use>
+            </svg>
+            <h4 class="secondary__heading">seo ready</h4>
+            <p class="paragraph__small">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about-section">
+        <div class="about__content">
+          <h3 class="primary__heading">
+            Unlimited Possibilities.<br />
+            1st Class Templates.
+          </h3>
+          <span class="badge">made by an elite author</span>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi,
+            minima sint et dignissimos corporis animi beatae provident hic
+            voluptatibus!
+          </p>
+          <div class="about__shop">
+            <svg class="about__icon">
+              <use xlink:href="media/sprite.svg#icon-shop"></use>
+            </svg>
+            <div class="about__shop--content">
+              <h4 class="secondary__heading">Open your own shop</h4>
+              <p class="paragraph__small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, distinctio!
+              </p>
+              <a href="#" class="btn btn-primary">learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="about__images">
+          <img
+            srcset="
+              media/desert-photo-small.jpg  600w,
+              media/desert-photo-large.jpg 2000w
+            "
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+            alt="a man on desert"
+            class="about__image about__image--1"
+            src="media/desert-photo-small.jpg"
+          />
+          <img
+            srcset="
+              media/achievement-confident-small.jpg  600w,
+              media/achievement-confident-large.jpg 2000w
+            "
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+            alt="a man on rock"
+            class="about__image about__image--2"
+            src="media/achievement-confident-small.jpg"
+          />
+          <img
+            srcset="
+              media/architecture-buildings-small.jpg  600w,
+              media/architecture-buildings-small.jpg 2000w
+            "
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+            alt="builings"
+            class="about__image about__image--3"
+            src="media/architecture-buildings-small.jpg"
+          />
+        </div>
+      </section>
+
+      <section class="booking" id="booking-section">
+        <form action="#" class="booking__form">
+          <span class="badge">100% free quote guaranteed</span>
+          <h3 class="primary__heading">Request Project Estimation</h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            laudantium!
+          </p>
+          <input
+            type="text"
+            class="booking__form--input"
+            placeholder="enter name"
+          />
+          <input
+            type="email"
+            class="booking__form--input"
+            placeholder="enter email"
+          />
+          <input
+            type="number"
+            class="booking__form--input"
+            placeholder="enter phone number"
+          />
+          <button class="btn btn-secondary">get a free quote</button>
+          <p class="paragraph__small">Lorem ipsum dolor sit amet.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Meet Our Team</a>
+        </li>
+        <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <svg class="footer__icon">
+          <use xlink:href="media/sprite.svg#icon-question-circle-o"></use>
+        </svg>
+        <p class="paragraph">
+          Copyright © 2020 by
+          <a
+            href="https://www.github.com/Devleed"
+            target="_blank"
+            class="footer__link"
+            >Muhammad Waleed</a
+          >
+          <br />
+          Design idea by
+          <a href="https://www.pixfort.com" target="_blank" class="footer__link"
+            >Pixfort</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

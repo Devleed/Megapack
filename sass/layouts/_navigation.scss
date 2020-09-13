@@ -1,0 +1,33 @@
+.navigation {
+  padding: 3.6rem 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-grey);
+  background-color: var(--color-white);
+  z-index: 1000;
+  border-bottom: var(--line);
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.4rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

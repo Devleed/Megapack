@@ -1,0 +1,46 @@
+.footer {
+  padding: 15rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond-max($medium-small) {
+    padding: 6rem;
+  }
+
+  &__items {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--color-grey-2);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

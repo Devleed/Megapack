@@ -1,0 +1,118 @@
+.about {
+  padding: 10rem 20rem;
+  background-color: var(--color-tertiary);
+  display: flex;
+  justify-content: space-between;
+
+  @include respond-max($largest) {
+    padding: 10rem 14rem;
+  }
+
+  @include respond-max($medium-small) {
+    flex-direction: column;
+    padding: 8rem;
+  }
+
+  &__content {
+    opacity: 0;
+    transition: all 0.9s;
+
+    @include respond-max($medium-small) {
+      text-align: center;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__images {
+    flex: 0 0 45%;
+    position: relative;
+    opacity: 0;
+    transition: all 0.9s;
+    @include respond-max($medium-small) {
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+    }
+  }
+  &__image {
+    width: 55%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: inline-block;
+    cursor: pointer;
+
+    @include respond-max($larger) {
+      width: 70%;
+    }
+
+    @include respond-max($medium-small) {
+      width: 40%;
+      position: static;
+      border-radius: 0;
+      box-shadow: 0 1rem 4rem 1rem rgba(0, 0, 0, 0.2);
+    }
+    &--1 {
+      top: 0;
+      left: 0;
+    }
+    &--2 {
+      top: 7rem;
+      left: 33%;
+
+      @include respond-max($medium-small) {
+        transform: scale(1.1);
+        box-shadow: 0 1rem 4.5rem 1rem rgba(0, 0, 0, 0.4);
+      }
+    }
+    &--3 {
+      top: 45%;
+      left: 15%;
+    }
+
+    &:hover {
+      z-index: 2;
+      transform: scale(1.2);
+    }
+  }
+
+  &__images:hover &__image:not(:hover) {
+    transform: scale(0.8);
+    filter: grayscale(1);
+    opacity: 0.75;
+  }
+
+  &__icon {
+    width: 12rem;
+    height: 12rem;
+    fill: var(--color-grey);
+    margin-right: 2rem;
+  }
+  &__shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    border: var(--box-border);
+
+    @include respond-max($medium) {
+      padding: 0.8rem;
+    }
+
+    &--content {
+      & > *:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &-visible {
+    .about__content,
+    .about__images {
+      opacity: 1;
+    }
+  }
+}

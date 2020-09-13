@@ -1,0 +1,31 @@
+.primary__heading,
+.secondary__heading {
+  text-transform: capitalize;
+}
+.primary__heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+
+  @include respond-max($phone) {
+    font-size: 3rem;
+  }
+}
+.secondary__heading {
+  font-size: 2rem;
+  font-weight: 300;
+
+  @include respond-max($phone) {
+    font-size: 1.5rem;
+  }
+}
+.paragraph,
+.paragraph__small {
+  color: var(--color-grey-2);
+}
+.paragraph {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.paragraph__small {
+  font-size: 1.2rem;
+}
